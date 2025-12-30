@@ -33,6 +33,48 @@
             margin-top: 20px;
             color: gray;
         }
+        .certificados-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.lista-certificados {
+    width: 35%;
+}
+
+.lista-certificados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-certificados li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    cursor: pointer;
+    border-left: 4px solid #2c3e50;
+}
+
+.lista-certificados li:hover {
+    background: #e0e0e0;
+}
+
+.vista-certificado {
+    width: 65%;
+    min-height: 480px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vista-certificado img {
+    width: 300px;
+    height: 450px;
+    object-fit: contain;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
     </style>
 </head>
 <body>
@@ -119,6 +161,39 @@ function mostrar(id) {
         img.style.display = "none";
     }
 }
+
+<!-- inicio 11 -->
+
+<h2>📄 Certificados y Títulos</h2>
+
+<div class="certificados-container">
+
+  <!-- LISTA -->
+  <div class="lista-certificados">
+    <ul>
+      <li onclick="verCertificado('certificado1.jpg', 'Diplomado en Educación – Universidad Pedagógica (2023)')">
+        📜 Diplomado en Educación
+      </li>
+
+      <li onclick="verCertificado('certificado2.jpg', 'Diplomado en Tecnología Educativa (2022)')">
+        📜 Diplomado en Tecnología Educativa
+      </li>
+
+      <li onclick="verCertificado('titulo.jpg', 'Título Profesional – Área Técnica')">
+        🎓 Título Profesional
+      </li>
+    </ul>
+  </div>
+
+  <!-- VISOR -->
+  <div class="vista-certificado" id="visor">
+    <p>Seleccione un certificado para visualizarlo</p>
+  </div>
+
+</div>
+        
+<!-- fin 11 -->
+        
 </script>      
     
     <footer>
