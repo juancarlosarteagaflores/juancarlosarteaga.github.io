@@ -73,12 +73,38 @@
         <img src="certificado2.jpg">
         <img src="titulo.jpg">
     </div>
+<p>
+  <a href="#" onclick="mostrar('certificado1')">
+    📜 Diplomado en Educación
+  </a>
+</p>
 
+<img id="certificado1" src="diplomado1.jpg" style="display:none; width:400px; border:1px solid #ccc;">
+
+<p>
+  <a href="#" onclick="mostrar('certificado2')">
+    📜 Diplomado en Tecnología Educativa
+  </a>
+</p>
+
+<img id="certificado2" src="diplomado2.jpg" style="display:none; width:400px; border:1px solid #ccc;">
+    
     <footer>
         © 2025 - Currículum Vitae Digital
     </footer>
 
 </div>
 
+<script>
+function mostrar(id) {
+    var img = document.getElementById(id);
+    if (img.style.display === "none") {
+        img.style.display = "block";
+    } else {
+        img.style.display = "none";
+    }
+}
+</script>    
+    
 </body>
 </html>
