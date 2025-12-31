@@ -147,33 +147,32 @@ footer {
 
         <div class="lista-certificados">
             <ul>
-                <li onclick="verDocumento('https://drive.google.com/file/d/1ADOvdxOnKS-5GTdMhRAAq8emJ3U9MUu6/preview')">
+                <li onclick="verDocumento1('https://drive.google.com/file/d/1ADOvdxOnKS-5GTdMhRAAq8emJ3U9MUu6/preview')">
                     🎓 Título de Bachiller en Humanidades
                 </li>
-                <li onclick="verDocumento('https://drive.google.com/file/d/1kVHryqwEXQeI5MwGkqS410urhpRnFNZr/preview')">
+                <li onclick="verDocumento1('https://drive.google.com/file/d/1kVHryqwEXQeI5MwGkqS410urhpRnFNZr/preview')">
                     🎓 Certificado “Programador en Aplicaciones”. 
                 </li>
-                <li onclick="verDocumento('https://drive.google.com/file/d/1z49ilkO5PZ4nsZtnSPvywvaSaZCWumrO/preview')">
+                <li onclick="verDocumento1('https://drive.google.com/file/d/1z49ilkO5PZ4nsZtnSPvywvaSaZCWumrO/preview')">
                     🎓 Certificado de “Técnico en electrónica Digital”. 
                 </li>
                
-                <li onclick="verDocumento('https://drive.google.com/file/d/1kVHryqwEXQeI5MwGkqS410urhpRnFNZr/preview')">
+                <li onclick="verDocumento1('https://drive.google.com/file/d/1kVHryqwEXQeI5MwGkqS410urhpRnFNZr/preview')">
                     📜 Diplomado en Tecnología Educativa
                 </li>
 
-                <li onclick="verDocumento('https://drive.google.com/file/d/ID_TITULO/preview')">
+                <li onclick="verDocumento1('https://drive.google.com/file/d/ID_TITULO/preview')">
                     🎓 Título Profesional
                 </li>
             </ul>
         </div>
 
         <div class="vista-certificado">
-            <iframe id="visor" src=""></iframe>
+            <iframe id="visor1" src=""></iframe>
         </div>
 
     </div>
-
-  
+ 
     
     
     <footer>
@@ -185,6 +184,9 @@ footer {
 <script>
 function verDocumento(url) {
     document.getElementById("visor").src = url;
+}
+function verDocumento1(url) {
+    document.getElementById("visor2").src = url;
 }
 </script>
 
