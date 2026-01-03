@@ -105,6 +105,28 @@ footer {
         <li>Docente formador en la Universidad Pedagógica de Bolivia, facilitando diplomados dirigidos a docentes a nivel nacional.</li>
     </ul>
 <!-- Este es un comentario en HTML -->
+ <h2>📄 DOCUMENTOS PERSONALES </h2>  
+    <h4>Para ver, dar clic en la lista de abajo 👇</h4>
+    <div class="certificados-container">
+        <div class="lista-certificados">
+            <ul>
+                <li onclick="verDocumento0('https://drive.google.com/file/d/11Wahz8zGtB8Dq-dxKXt6bl-x0FckmhrG/preview')">
+                    📜 Carnet de Identidad
+                </li>
+                <li onclick="verDocumento0('https://drive.google.com/file/d/1Dy8YDDQy7N6zgG2KnTSzQlMblBHqUwv_/preview')">
+                    📜 R.D.A. (Magisterio)
+                </li>
+                  <li onclick="verDocumento0('https://drive.google.com/file/d/1FBYs2G5l1lybcdIHBXzLISH2Io3-QKtB/preview')">
+                    📜 Reporte años de Servicio
+                </li>
+            </ul>
+         </div>
+
+        <div class="vista-certificado">
+            <iframe id="visor0" src=""></iframe>
+        </div>
+      </div>
+    
     <h2>📄 TÍTULOS Y CERTIFICADOS DE EGRESO</h2>  
     <h4>Para ver, dar clic en la lista de abajo 👇</h4>
     <div class="certificados-container">
@@ -226,6 +248,10 @@ footer {
 </div>
 
 <script>
+    
+function verDocumento0(url) {
+    document.getElementById("visor0").src = url;
+}
 function verDocumento(url) {
     document.getElementById("visor").src = url;
 }
